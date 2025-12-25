@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 8 </title>
+</head>
+<style>
+    body {
+        background-color: lightgrey;
+    }
+
+    .container {
+        height: 700px;
+        width: 700px;
+        background-color: rgb(8, 242, 250);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .ball {
+        position: relative;
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: lightcoral;
+        border-radius: 50%;
+        top: 600px;
+        animation: move 2s  linear infinite;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(0px) translateY(0px);
+        }
+        50% {
+            transform: translateX(250px) translateY(-300px);
+        }
+        100% {
+            transform: translateX(600px) translateY(0px);
+        }
+    }
+</style>
+<body>
+<div class="container">
+    <div class="ball"></div>
+</div>
+</body>
+</html>
