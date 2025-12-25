@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multicoloured nav bar</title>
+</head>
+<style>
+body {
+    background-color: lightblue;
+}
+:root {
+    --nav-height: 50px;
+    --colour: #4CAF50;
+    --colour2: #3f97e0;
+    --colour3: #f44336; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: var(--nav-height);
+    display: flex;
+}
+ul li a{
+    width: 160px;
+    display: block;
+    margin: 0 10px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: var(--nav-height);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;  
+}
+ul li:nth-child(1) {
+    background-color: var(--colour);
+}
+ul li:nth-child(2) {
+    background-color: var(--colour2);
+}
+ul li:nth-child(3) {
+    background-color: var(--colour3);
+}
+</style>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/wallpaperflare.com_wallpaper (1).jpg">home</a></li>
+                <li><a href="/wallpaperflare.com_wallpaper (1).jpg">about</a></li>
+                <li><a href="/wallpaperflare.com_wallpaper (1).jpg">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
